@@ -20,6 +20,7 @@ app.get('/products', (req, res) => {
     res.send(products)
   })
 
+//   Search Product by ProductID
   app.get('/products/:id', (req, res) => {
     const id = req.params.id;
     const selected_product = products.find(p => p.id == id);
