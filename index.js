@@ -20,6 +20,13 @@ app.get('/products', (req, res) => {
     res.send(products)
   })
 
+  app.get('/products/:id', (req, res) => {
+    const id = req.params.id;
+    const selected_product = products.find(p => p.id == id);
+    res.send(selected_product);
+    // console.log(selected_product);
+  });
+
 //   Search Product by category
   app.get('/products/category/:id', (req, res) => {
     const id = req.params.id;
