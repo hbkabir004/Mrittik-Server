@@ -16,8 +16,18 @@ app.get('/category', (req, res) => {
     res.send(category)
   })
   
-  app.get('/products', (req, res) => {
+app.get('/products', (req, res) => {
     res.send(products)
+  })
+
+//   Search Product by category
+  app.get('/products/category/:id', (req, res) => {
+    const id = req.params.id;
+        const category_product = products.filter(product => product.categoryID === id);
+        // const category_product = products.filter(product => console.log(product.categoryID));
+        console.log(id);
+        res.send(category_product);
+  
   })
 
 app.listen(port, () => {
