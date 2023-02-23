@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Bed Room",
+    "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+    "total": "3",
+    "subCategory": "3"
+
+  },
+  {
+    "id": "2",
+    "name": "Living Room",
+    "logo": "https://live.staticflickr.com/65535/52412638962_12e932256a_o.png",
+    "total": "5",
+    "subCategory": "3"
+
+  },
+  {
+    "id": "3",
+    "name": "Dining Room",
+    "logo": "https://live.staticflickr.com/65535/52413665713_5977a693cb_o.png",
+    "total": "5",
+    "subCategory": "3"
+
+  },
+  {
+    "id": "4",
+    "name": "Garden",
+    "logo": "https://live.staticflickr.com/65535/52412639027_5692c15b3f_o.png",
+    "total": "2",
+    "subCategory": "3"
+
+  },
+  {
+    "id": "5",
+    "name": "Wall Paintings",
+    "logo": "https://www.seekpng.com/png/full/80-803527_html5-css3-and-javascript-logos-html5-logo-png.png",
+    "total": "5",
+    "subCategory": "3"
+
+  },
+  {
+    "id": "6",
+    "name": "Furniture",
+    "logo": "https://usefulangle.com/img/thumb/nodejs.png",
+    "total": "2",
+    "subCategory": "3"
+
+  },
+  {
+    "id": "7",
+    "name": "Home Decor",
+    "logo": "https://usefulangle.com/img/thumb/nodejs.png",
+    "total": "2",
+    "subCategory": "3"
+
+  }
+]
