@@ -13,6 +13,7 @@
     "id": "2",
     "name": "Hanging Light",
     "price": "$15.00",
+    "oldClass": "d-none",
     "img": "https://i.ibb.co/8BgPvQd/2-1.png",
     "categoryID": "7",
     "categoryName": "Home Decor"
@@ -49,6 +50,7 @@
     "price": "$15.00",
     "badge": "new",
     "newClass": "badge-new",
+    "oldClass": "d-none",
     "img": "https://i.ibb.co/Bfp6dHZ/5-1.png",
     "categoryID": "6",
     "categoryName": "Furniture"
