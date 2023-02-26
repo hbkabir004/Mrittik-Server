@@ -4,6 +4,7 @@
     "name": "Decor Plant",
     "price": "$15.00",
     "badge": "new",
+    "newClass": "badge-new",
     "img": "https://i.ibb.co/3ztPtN7/1-1.png",
     "categoryID": "4",
     "categoryName": "Garden"
@@ -21,8 +22,10 @@
     "id": "3",
     "name": "Green Armchair",
     "price": "$15.00",
-    "oldPrice": "$23.00",
+    "oldPrice": "$13.00",
+    "oldClass": "old_price",
     "badge": "sale",
+    "newClass": "badge-sale",
     "img": "https://i.ibb.co/NLzL4yP/3-1.png",
     "categoryID": "6",
     "categoryName": "Furniture"
@@ -32,7 +35,9 @@
     "name": "Brown Table Lamp",
     "price": "$15.00",
     "oldPrice": "$23.00",
+    "oldClass": "old_price",
     "badge": "sale",
+    "newClass": "badge-sale",
     "img": "https://i.ibb.co/j8DSN4d/4-1.png",
     "categoryID": "7",
     "categoryName": "Home Decor"
@@ -43,6 +48,7 @@
     "name": "Wooden Center Table",
     "price": "$15.00",
     "badge": "new",
+    "newClass": "badge-new",
     "img": "https://i.ibb.co/Bfp6dHZ/5-1.png",
     "categoryID": "6",
     "categoryName": "Furniture"
@@ -52,6 +58,7 @@
     "name": "Snake Plant",
     "price": "$19.00",
     "oldPrice": "$23.00",
+    "oldClass": "old_price",
     "img": "https://i.ibb.co/Rys1Z5n/6-1.png",
     "categoryID": "4",
     "categoryName": "Garden"
@@ -77,6 +84,7 @@
     "name": "Black Vase",
     "price": "$19.00",
     "badge": "sale",
+    "newClass": "badge-sale",
     "img": "https://i.ibb.co/VjdSV1g/9-1.png",
     "categoryID": "5",
     "categoryName": "Wall Paintings"
@@ -86,6 +94,7 @@
     "name": "White Armchair",
     "price": "$19.00",
     "badge": "new",
+    "newClass": "badge-new",
     "img": "https://i.ibb.co/XYV53Vs/10-1.png",
     "categoryID": "6",
     "categoryName": "Furniture"
@@ -95,6 +104,7 @@
     "name": "Teal Rug",
     "price": "$19.00",
     "badge": "new",
+    "newClass": "badge-new",
     "img": "https://i.ibb.co/T1f2RfP/11-1.png",
     "categoryID": "3",
     "categoryName": "Dining Room"
@@ -104,6 +114,7 @@
     "name": "Plant With Stand",
     "price": "$19.00",
     "badge": "sale",
+    "newClass": "badge-sale",
     "img": "https://i.ibb.co/DCQG04q/12-1.png",
     "categoryID": "4",
     "categoryName": "Garden"
