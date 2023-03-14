@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Decor Plant",
-    "price": "$15.00",
+    "price": "15.00",
     "badge": "new",
     "newClass": "badge-new",
     "img": "https://i.ibb.co/3ztPtN7/1-1.png",
@@ -12,7 +12,7 @@
   {
     "id": "2",
     "name": "Hanging Light",
-    "price": "$15.00",
+    "price": "15.00",
     "oldClass": "d-none",
     "img": "https://i.ibb.co/8BgPvQd/2-1.png",
     "categoryID": "7",
@@ -22,8 +22,8 @@
   {
     "id": "3",
     "name": "Green Armchair",
-    "price": "$15.00",
-    "oldPrice": "$13.00",
+    "price": "15.00",
+    "oldPrice": "13.00",
     "oldClass": "old_price",
     "badge": "sale",
     "newClass": "badge-sale",
@@ -34,8 +34,8 @@
   {
     "id": "4",
     "name": "Brown Table Lamp",
-    "price": "$15.00",
-    "oldPrice": "$23.00",
+    "price": "15.00",
+    "oldPrice": "23.00",
     "oldClass": "old_price",
     "badge": "sale",
     "newClass": "badge-sale",
@@ -47,7 +47,7 @@
   {
     "id": "5",
     "name": "Wooden Center Table",
-    "price": "$15.00",
+    "price": "15.00",
     "badge": "new",
     "newClass": "badge-new",
     "oldClass": "d-none",
@@ -58,8 +58,8 @@
   {
     "id": "6",
     "name": "Snake Plant",
-    "price": "$19.00",
-    "oldPrice": "$23.00",
+    "price": "19.00",
+    "oldPrice": "23.00",
     "oldClass": "old_price",
     "img": "https://i.ibb.co/Rys1Z5n/6-1.png",
     "categoryID": "4",
@@ -68,7 +68,7 @@
   {
     "id": "7",
     "name": "Center Table",
-    "price": "$19.00",
+    "price": "19.00",
     "img": "https://i.ibb.co/VmLD95L/7-1.png",
     "categoryID": "2",
     "categoryName": "Living Room"
@@ -76,7 +76,7 @@
   {
     "id": "8",
     "name": "Alarm Clock",
-    "price": "$19.00",
+    "price": "19.00",
     "img": "https://i.ibb.co/RcrtfrP/8-1.png",
     "categoryID": "1",
     "categoryName": "Bed Room"
@@ -84,7 +84,7 @@
   {
     "id": "9",
     "name": "Black Vase",
-    "price": "$19.00",
+    "price": "19.00",
     "badge": "sale",
     "newClass": "badge-sale",
     "img": "https://i.ibb.co/VjdSV1g/9-1.png",
@@ -94,7 +94,7 @@
   {
     "id": "10",
     "name": "White Armchair",
-    "price": "$19.00",
+    "price": "19.00",
     "badge": "new",
     "newClass": "badge-new",
     "img": "https://i.ibb.co/XYV53Vs/10-1.png",
@@ -104,7 +104,7 @@
   {
     "id": "11",
     "name": "Teal Rug",
-    "price": "$19.00",
+    "price": "19.00",
     "badge": "new",
     "newClass": "badge-new",
     "img": "https://i.ibb.co/T1f2RfP/11-1.png",
@@ -114,7 +114,7 @@
   {
     "id": "12",
     "name": "Plant With Stand",
-    "price": "$19.00",
+    "price": "19.00",
     "badge": "sale",
     "newClass": "badge-sale",
     "img": "https://i.ibb.co/DCQG04q/12-1.png",
