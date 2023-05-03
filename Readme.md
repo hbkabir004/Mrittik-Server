@@ -12,7 +12,8 @@ Example: https://mrittik-server.vercel.app/products/category/1
 
 #### Get Category by search: https://mrittik-server.vercel.app/category?[dataProperty]=[dataValue]
 
-#### Example: https://mrittik-server.vercel.app/category?name=Furniture
+#### Example (With Name): https://mrittik-server.vercel.app/category?name=Furniture
+#### Example (With ID): https://mrittik-server.vercel.app/category?categoryID=3
 
 <br>
 
@@ -24,4 +25,5 @@ Example: https://mrittik-server.vercel.app/products/1
 
 #### Get Product by Search: https://mrittik-server.vercel.app/products?[dataProperty]=[dataValue]
 
-#### Example: https://mrittik-server.vercel.app/products?name=Decor+Plant
+#### Example (With Name): https://mrittik-server.vercel.app/products?name=Decor+Plant
+#### Example (With ID): https://mrittik-server.vercel.app/products?id=7
