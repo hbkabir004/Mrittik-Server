@@ -10,9 +10,9 @@ Get Product details by category id: https://mrittik-server.vercel.app/products/c
 
 Example: https://mrittik-server.vercel.app/products/category/1
 
-Get Category by search: https://mrittik-server.vercel.app/category?[dataProperty]=[dataValue]
+#### Get Category by search: https://mrittik-server.vercel.app/category?[dataProperty]=[dataValue]
 
-Example: https://mrittik-server.vercel.app/category?name=Furniture
+#### Example: https://mrittik-server.vercel.app/category?name=Furniture
 
 <br>
 
@@ -22,6 +22,6 @@ Get Product details by Product id: https://mrittik-server.vercel.app/products/${
 
 Example: https://mrittik-server.vercel.app/products/1
 
-Get Product by search: https://mrittik-server.vercel.app/products?[dataProperty]=[dataValue]
+#### Get Product by Search: https://mrittik-server.vercel.app/products?[dataProperty]=[dataValue]
 
-Example: https://mrittik-server.vercel.app/products?name=Decor+Plant
+#### Example: https://mrittik-server.vercel.app/products?name=Decor+Plant
