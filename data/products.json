@@ -5,6 +5,7 @@
     "price": "15.00",
     "badge": "new",
     "newClass": "badge-new",
+    "oldClass": "d-none",
     "img": "https://i.ibb.co/3ztPtN7/1-1.png",
     "categoryID": "4",
     "categoryName": "Garden"
@@ -68,6 +69,7 @@
   {
     "id": "7",
     "name": "Center Table",
+    "oldClass": "d-none",
     "price": "19.00",
     "img": "https://i.ibb.co/VmLD95L/7-1.png",
     "categoryID": "2",
@@ -76,6 +78,7 @@
   {
     "id": "8",
     "name": "Alarm Clock",
+    "oldClass": "d-none",
     "price": "19.00",
     "img": "https://i.ibb.co/RcrtfrP/8-1.png",
     "categoryID": "1",
@@ -87,6 +90,7 @@
     "price": "19.00",
     "badge": "sale",
     "newClass": "badge-sale",
+    "oldClass": "d-none",
     "img": "https://i.ibb.co/VjdSV1g/9-1.png",
     "categoryID": "5",
     "categoryName": "Wall Paintings"
@@ -97,6 +101,7 @@
     "price": "19.00",
     "badge": "new",
     "newClass": "badge-new",
+    "oldClass": "d-none",
     "img": "https://i.ibb.co/XYV53Vs/10-1.png",
     "categoryID": "6",
     "categoryName": "Furniture"
@@ -107,6 +112,7 @@
     "price": "19.00",
     "badge": "new",
     "newClass": "badge-new",
+    "oldClass": "d-none",
     "img": "https://i.ibb.co/T1f2RfP/11-1.png",
     "categoryID": "3",
     "categoryName": "Dining Room"
@@ -117,6 +123,7 @@
     "price": "19.00",
     "badge": "sale",
     "newClass": "badge-sale",
+    "oldClass": "d-none",
     "img": "https://i.ibb.co/DCQG04q/12-1.png",
     "categoryID": "4",
     "categoryName": "Garden"

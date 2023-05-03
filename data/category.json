@@ -5,9 +5,7 @@
     "logo": "https://i.ibb.co/VSjXpF2/8.jpg",
     "total": "3",
     "subCategoryID": "1",
-    "item1" : "Almirah",
-    "item2" : "Tool",
-    "item3" : "Mirror",
+    "item1" : "Alarm Clock",
     "id" : "tool_one",
     "href" : "#tool_one"
 
@@ -18,9 +16,7 @@
     "logo": "https://i.ibb.co/DbfhmJ2/7.jpg",
     "total": "3",
     "subCategoryID": "2",
-    "item1" : "Sofa",
-    "item2" : "Chair",
-    "item3" : "Table",
+    "item1" : "Center Table",
     "id" : "tool_two",
     "href" : "#tool_two"
 
@@ -31,8 +27,7 @@
     "logo": "https://i.ibb.co/nsjsGpL/1.jpg",
     "total": "2",
     "subCategoryID": "3",
-    "item1" : "Fruit Basket",
-    "item2" : "Dining Table",
+    "item1" : "Teal Rug",
     "id" : "tool_three",
     "href" : "#tool_three"
 
@@ -43,9 +38,9 @@
     "logo": "https://i.ibb.co/6PBvbrj/3.jpg",
     "total": "3",
     "subCategoryID": "1",
-    "item1" : "Spade",
-    "item2" : "Knife",
-    "item3" : "Plant",
+    "item1" : "Decor Plant",
+    "item2" : "Snake Plant",
+    "item3" : "Plant With Stand",
     "id" : "tool_four",
     "href" : "#tool_four"
 
@@ -56,9 +51,7 @@
     "logo": "https://i.ibb.co/vxRNm4J/3.jpg",
     "total": "3",
     "subCategoryID": "1",
-    "item1" : "Artistic",
-    "item2" : "Paint",
-    "item3" : "Brush",
+    "item1" : "Black Vase",
     "id" : "tool_five",
     "href" : "#tool_five"
 
@@ -69,9 +62,9 @@
     "logo": "https://i.ibb.co/M6Smhfg/2.jpg",
     "total": "3",
     "subCategoryID": "1",
-    "item1" : "Chair",
-    "item2" : "Table",
-    "item3" : "Showcase",
+    "item1" : "Green Armchair",
+    "item2" : "Wooden Center Table",
+    "item3" : "White Armchair",
     "id" : "tool_six",
     "href" : "#tool_six"
 
@@ -82,9 +75,8 @@
     "logo": "https://i.ibb.co/nb90WmS/6.jpg",
     "total": "3",
     "subCategoryID": "1",
-    "item1" : "Plant",
-    "item2" : "Lamp",
-    "item3" : "Paintings",
+    "item1" : "Hanging Light",
+    "item2" : "Brown Table Lamp",
     "id" : "tool_seven",
     "href" : "#tool_seven"
 

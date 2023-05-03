@@ -12,13 +12,35 @@ app.get('/', (req, res) => {
   res.send('Server is running')
 })
 
+// Search Product By Category Properties
 app.get('/category', (req, res) => {
-    res.send(category)
+  const filters = req.query;
+  const searched_category = category.filter(c => {
+    let isValid = true;
+    for (key in filters) {
+      console.log(key, c[key], filters[key]);
+      isValid = isValid && c[key] == filters[key];
+    }
+    return isValid;
+  });
+  res.send(searched_category);
+  })
+
+
+// Search Product By Product Properties  
+app.get('/products', (req, res) => {
+  const filters = req.query;
+  const searched_product = products.filter(p => {
+    let isValid = true;
+    for (key in filters) {
+      console.log(key, p[key], filters[key]);
+      isValid = isValid && p[key] == filters[key];
+    }
+    return isValid;
+  });
+  res.send(searched_product);
   })
   
-app.get('/products', (req, res) => {
-    res.send(products)
-  })
 
 //   Search Category by ID
   app.get('/category/:id', (req, res) => {
