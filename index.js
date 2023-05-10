@@ -18,7 +18,7 @@ app.get('/category', (req, res) => {
   const searched_category = category.filter(c => {
     let isValid = true;
     for (key in filters) {
-      console.log(key, c[key], filters[key]);
+      // console.log(key, c[key], filters[key]);
       isValid = isValid && c[key] == filters[key];
     }
     return isValid;
@@ -33,12 +33,14 @@ app.get('/products', (req, res) => {
   const searched_product = products.filter(p => {
     let isValid = true;
     for (key in filters) {
-      console.log(key, p[key], filters[key]);
-      isValid = isValid && p[key] == filters[key];
+      let productSearching = p[key].toString().toLowerCase();
+      let productFiltering = filters[key].toString().toLowerCase(); 
+      isValid = isValid && productSearching[0] == productFiltering[0];
     }
     return isValid;
   });
   res.send(searched_product);
+  // console.log(searched_product);
   })
   
 
