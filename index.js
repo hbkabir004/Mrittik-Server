@@ -4,7 +4,9 @@ const port = process.env.PORT || 5000
 const cors = require('cors')
 
 const category = require('./data/category.json');
-const products = require('./data/products.json')
+const products = require('./data/products.json');
+const aesProducts = require('./data/products.json');
+const desProducts = require('./data/products.json');
 
 app.use(cors())
 
@@ -18,7 +20,6 @@ app.get('/category', (req, res) => {
   const searched_category = category.filter(c => {
     let isValid = true;
     for (key in filters) {
-      // console.log(key, c[key], filters[key]);
       isValid = isValid && c[key] == filters[key];
     }
     return isValid;
@@ -33,6 +34,7 @@ app.get('/products', (req, res) => {
   const searched_product = products.filter(p => {
     let isValid = true;
     for (key in filters) {
+      // console.log(key, filters);
       let productSearching = p[key].toString().toLowerCase();
       let productFiltering = filters[key].toString().toLowerCase();
       isValid = isValid && productSearching.includes(productFiltering);
@@ -41,6 +43,32 @@ app.get('/products', (req, res) => {
   });
   res.send(searched_product);
   // console.log(searched_product);
+})
+
+// Low to High
+app.get('/products/aes', (req, res) => {
+  function compare(a, b) {
+    const aesPriceA = parseInt(a.price);
+    const aesPriceB = parseInt(b.price);
+    return aesPriceA - aesPriceB;
+  }
+
+  const aes_products = aesProducts.sort(compare);
+  res.send(aes_products);
+  // console.log(aes_products);
+})
+
+// High to Low 
+app.get('/products/des', (req, res) => {
+  function compare(a, b) {
+    const desPriceA = parseInt(a.price);
+    const desPriceB = parseInt(b.price);
+    return desPriceB - desPriceA;
+  }
+
+  const des_products = desProducts.sort(compare);
+  res.send(des_products);
+  // console.log(des_products);
 })
 
 
