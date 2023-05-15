@@ -98,17 +98,44 @@ app.get('/products/category/:id', (req, res) => {
 
 })
 
+//   Search Product by category
+app.get('/products/category/:id/aes', (req, res) => {
+  const id = req.params.id;
+  const category_product = products.filter(product => product.categoryID === id);
+  // const category_product = products.filter(product => console.log(product.categoryID));
+  // console.log(id);
 
-// Sort Products by Price in Ascending order
-// app.get('/products', (req, res) => {
-//   const { sort } = req.query;
-//   if (sort === 'price_asc') {
-//     const sortedProducts = products.sort((a, b) => a.price - b.price);
-//     return res.json({ products: sortedProducts });
-//   } else {
-//     return res.json({ products: products });
-//   }
-// });
+  function compare(a, b) {
+    const aesCatPriceA = parseInt(a.price);
+    const aesCatPriceB = parseInt(b.price);
+    return aesCatPriceA - aesCatPriceB;
+  }
+
+  const aes_cat_products = category_product.sort(compare);
+  // res.send(aes_products);
+  res.send(aes_cat_products);
+
+})
+
+//   Search Product by category
+app.get('/products/category/:id/des', (req, res) => {
+  const id = req.params.id;
+  const category_product = products.filter(product => product.categoryID === id);
+  // const category_product = products.filter(product => console.log(product.categoryID));
+  // console.log(id);
+
+  function compare(a, b) {
+    const desCatPriceA = parseInt(a.price);
+    const desCatPriceB = parseInt(b.price);
+    return desCatPriceB - desCatPriceA;
+  }
+
+  const des_cat_products = category_product.sort(compare);
+  res.send(des_cat_products);
+
+})
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
