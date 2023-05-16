@@ -93,8 +93,21 @@ app.get('/products/category/:id', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
   // const category_product = products.filter(product => console.log(product.categoryID));
-  console.log(id);
-  res.send(category_product);
+  // console.log(id);
+
+  const filters = req.query;
+  const category_searched_product = category_product.filter(p => {
+    let isValid = true;
+    for (key in filters) {
+      // console.log(key, filters);
+      let productSearching = p[key].toString().toLowerCase();
+      let productFiltering = filters[key].toString().toLowerCase();
+      isValid = isValid && productSearching.includes(productFiltering);
+    }
+    return isValid;
+  });
+
+  res.send(category_searched_product);
 
 })
 
