@@ -15,7 +15,7 @@
   {
     "id": "2",
     "name": "Hanging Light",
-    "price": "15.00",
+    "price": "35.00",
     "oldClass": "d-none",
     "img": "https://i.ibb.co/8BgPvQd/2-1.png",
     "categoryID": "7",
@@ -26,7 +26,7 @@
   {
     "id": "3",
     "name": "Green Armchair",
-    "price": "15.00",
+    "price": "1500.00",
     "oldPrice": "13.00",
     "oldClass": "old_price",
     "badge": "sale",
@@ -40,7 +40,7 @@
   {
     "id": "4",
     "name": "Brown Table Lamp",
-    "price": "15.00",
+    "price": "90.00",
     "oldPrice": "23.00",
     "oldClass": "old_price",
     "badge": "sale",
@@ -54,7 +54,7 @@
   {
     "id": "5",
     "name": "Wooden Center Table",
-    "price": "15.00",
+    "price": "2199.00",
     "badge": "new",
     "newClass": "badge-new",
     "oldClass": "d-none",
@@ -80,7 +80,7 @@
     "id": "7",
     "name": "Center Table",
     "oldClass": "d-none",
-    "price": "19.00",
+    "price": "1999.00",
     "img": "https://i.ibb.co/VmLD95L/7-1.png",
     "categoryID": "2",
     "categoryName": "Living Room",
@@ -91,7 +91,7 @@
     "id": "8",
     "name": "Alarm Clock",
     "oldClass": "d-none",
-    "price": "19.00",
+    "price": "25.00",
     "img": "https://i.ibb.co/RcrtfrP/8-1.png",
     "categoryID": "1",
     "categoryName": "Bed Room",
@@ -101,7 +101,7 @@
   {
     "id": "9",
     "name": "Black Vase",
-    "price": "19.00",
+    "price": "30.00",
     "badge": "sale",
     "newClass": "badge-sale",
     "oldClass": "d-none",
@@ -114,7 +114,7 @@
   {
     "id": "10",
     "name": "White Armchair",
-    "price": "19.00",
+    "price": "150.00",
     "badge": "new",
     "newClass": "badge-new",
     "oldClass": "d-none",
@@ -127,7 +127,7 @@
   {
     "id": "11",
     "name": "Teal Rug",
-    "price": "19.00",
+    "price": "190.00",
     "badge": "new",
     "newClass": "badge-new",
     "oldClass": "d-none",
@@ -140,7 +140,7 @@
   {
     "id": "12",
     "name": "Plant With Stand",
-    "price": "19.00",
+    "price": "29.00",
     "badge": "sale",
     "newClass": "badge-sale",
     "oldClass": "d-none",
