@@ -5,6 +5,7 @@ const cors = require('cors')
 
 const category = require('./data/category.json');
 const products = require('./data/products.json');
+const tags = require('./data/tag.json');
 const aesProducts = require('./data/products.json');
 const desProducts = require('./data/products.json');
 
@@ -42,6 +43,23 @@ app.get('/products', (req, res) => {
     return isValid;
   });
   res.send(searched_product);
+  // console.log(searched_product);
+})
+
+// Search Product By Tags 
+app.get('/tags', (req, res) => {
+  const filters = req.query;
+  const searched_tag = tags.filter(p => {
+    let isValid = true;
+    for (key in filters) {
+      // console.log(key, filters);
+      let tagSearching = p[key].toString().toLowerCase();
+      let tagFiltering = filters[key].toString().toLowerCase();
+      isValid = isValid && tagSearching.includes(tagFiltering);
+    }
+    return isValid;
+  });
+  res.send(searched_tag);
   // console.log(searched_product);
 })
 
@@ -88,13 +106,21 @@ app.get('/products/:id', (req, res) => {
   // console.log(selected_product);
 });
 
-//   Search Product by category
+//   Search Product by CategoryID
 app.get('/products/category/:id', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
   // const category_product = products.filter(product => console.log(product.categoryID));
   console.log(id);
   res.send(category_product);
+
+})
+
+//   Search Product by TAG
+app.get('/products/tag/:id', (req, res) => {
+  const id = req.params.id;
+  const tag_product = products.filter(product => product.tagID === id);
+  res.send(tag_product);
 
 })
 
@@ -134,8 +160,6 @@ app.get('/products/category/:id/des', (req, res) => {
   res.send(des_cat_products);
 
 })
-
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

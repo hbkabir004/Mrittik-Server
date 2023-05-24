@@ -27,3 +27,10 @@ Example: https://mrittik-server.vercel.app/products/1
 
 #### Example (With Name): https://mrittik-server.vercel.app/products?name=Decor+Plant
 #### Example (With ID): https://mrittik-server.vercel.app/products?id=7
+
+## Get all Products with Tags: https://mrittik-server.vercel.app/tags
+
+Search Products by Tag Name: https://mrittik-server.vercel.app/products?[TagName]=[SearchItem]
+
+Example: [https://mrittik-server.vercel.app/products?tag=a](https://mrittik-server.vercel.app/products?tag=a)
+

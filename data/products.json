@@ -1,4 +1,4 @@
-[  
+[
   {
     "id": "1",
     "name": "Decor Plant",
@@ -9,7 +9,8 @@
     "img": "https://i.ibb.co/3ztPtN7/1-1.png",
     "categoryID": "4",
     "categoryName": "Garden",
-    "tag": "Decor"
+    "tag": "Decor",
+    "tagID": "5"
   },
   {
     "id": "2",
@@ -19,8 +20,8 @@
     "img": "https://i.ibb.co/8BgPvQd/2-1.png",
     "categoryID": "7",
     "categoryName": "Home Decor",
-    "tag": "Decor"
-    
+    "tag": "Decor",
+    "tagID": "5"
   },
   {
     "id": "3",
@@ -33,7 +34,8 @@
     "img": "https://i.ibb.co/NLzL4yP/3-1.png",
     "categoryID": "6",
     "categoryName": "Furniture",
-    "tag": "Interior"
+    "tag": "Interior",
+    "tagID": "2"
   },
   {
     "id": "4",
@@ -46,8 +48,8 @@
     "img": "https://i.ibb.co/j8DSN4d/4-1.png",
     "categoryID": "7",
     "categoryName": "Home Decor",
-    "tag": "Interior"
-    
+    "tag": "Interior",
+    "tagID": "2"
   },
   {
     "id": "5",
@@ -59,7 +61,8 @@
     "img": "https://i.ibb.co/Bfp6dHZ/5-1.png",
     "categoryID": "6",
     "categoryName": "Furniture",
-    "tag": "Dining"
+    "tag": "Dining",
+    "tagID": "3"
   },
   {
     "id": "6",
@@ -70,7 +73,8 @@
     "img": "https://i.ibb.co/Rys1Z5n/6-1.png",
     "categoryID": "4",
     "categoryName": "Garden",
-    "tag": "Trendy"
+    "tag": "Trendy",
+    "tagID": "4"
   },
   {
     "id": "7",
@@ -80,7 +84,8 @@
     "img": "https://i.ibb.co/VmLD95L/7-1.png",
     "categoryID": "2",
     "categoryName": "Living Room",
-    "tag": "Dining"
+    "tag": "Dining",
+    "tagID": "3"
   },
   {
     "id": "8",
@@ -90,7 +95,8 @@
     "img": "https://i.ibb.co/RcrtfrP/8-1.png",
     "categoryID": "1",
     "categoryName": "Bed Room",
-    "tag": "Trendy"
+    "tag": "Trendy",
+    "tagID": "4"
   },
   {
     "id": "9",
@@ -102,7 +108,8 @@
     "img": "https://i.ibb.co/VjdSV1g/9-1.png",
     "categoryID": "5",
     "categoryName": "Wall Paintings",
-    "tag": "Architecture"
+    "tag": "Architecture",
+    "tagID": "1"
   },
   {
     "id": "10",
@@ -114,7 +121,8 @@
     "img": "https://i.ibb.co/XYV53Vs/10-1.png",
     "categoryID": "6",
     "categoryName": "Furniture",
-    "tag": "Interior"
+    "tag": "Interior",
+    "tagID": "2"
   },
   {
     "id": "11",
@@ -126,7 +134,8 @@
     "img": "https://i.ibb.co/T1f2RfP/11-1.png",
     "categoryID": "3",
     "categoryName": "Dining Room",
-    "tag": "Decor"
+    "tag": "Decor",
+    "tagID": "5"
   },
   {
     "id": "12",
@@ -138,6 +147,7 @@
     "img": "https://i.ibb.co/DCQG04q/12-1.png",
     "categoryID": "4",
     "categoryName": "Garden",
-    "tag": "Lawn"
+    "tag": "Lawn",
+    "tagID": "6"
   }
 ]

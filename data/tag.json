@@ -1,0 +1,26 @@
+[
+  {
+    "tagID": "1",
+    "tag": "Architecture"
+  },
+  {
+    "tagID": "2",
+    "tag": "Interior"
+  },
+  {
+    "tagID": "3",
+    "tag": "Dining"
+  },
+  {
+    "tagID": "4",
+    "tag": "Trendy"
+  },
+  {
+    "tagID": "5",
+    "tag": "Decor"
+  },
+  {
+    "tagID": "6",
+    "tag": "Lawn"
+  }
+]
