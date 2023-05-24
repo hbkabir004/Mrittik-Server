@@ -2,9 +2,9 @@
 
 ## Live Link
 
-Hosted in Vercel -> [Mrittik Server](https://mrittik-server.vercel.app/)
+## Hosted in Vercel -> [Mrittik Server](https://mrittik-server.vercel.app/)
 
-## Get all Product Categories: https://mrittik-server.vercel.app/category
+### Get all Product Categories: https://mrittik-server.vercel.app/category
 
 Get Product details by category id: https://mrittik-server.vercel.app/products/category/${id}
 
@@ -17,7 +17,7 @@ Example: https://mrittik-server.vercel.app/products/category/1
 
 <br>
 
-## Get all Products: https://mrittik-server.vercel.app/products
+### Get all Products: https://mrittik-server.vercel.app/products
 
 Get Product details by Product id: https://mrittik-server.vercel.app/products/${id}
 
@@ -28,7 +28,7 @@ Example: https://mrittik-server.vercel.app/products/1
 #### Example (With Name): https://mrittik-server.vercel.app/products?name=Decor+Plant
 #### Example (With ID): https://mrittik-server.vercel.app/products?id=7
 
-## Get all Products with Tags: https://mrittik-server.vercel.app/tags
+### Get all Products with Tags: https://mrittik-server.vercel.app/tags
 
 Search Products by Tag Name: https://mrittik-server.vercel.app/products?[TagName]=[SearchItem]
 
