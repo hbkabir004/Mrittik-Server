@@ -6,6 +6,7 @@ const cors = require('cors')
 const category = require('./data/category.json');
 const products = require('./data/products.json');
 const tags = require('./data/tag.json');
+const brands = require('./data/brand.json');
 const aesProducts = require('./data/products.json');
 const desProducts = require('./data/products.json');
 
@@ -60,6 +61,23 @@ app.get('/tags', (req, res) => {
     return isValid;
   });
   res.send(searched_tag);
+  // console.log(searched_product);
+})
+
+// Search Product By Brands 
+app.get('/brands', (req, res) => {
+  const filters = req.query;
+  const searched_brand = brands.filter(p => {
+    let isValid = true;
+    for (key in filters) {
+      // console.log(key, filters);
+      let brandSearching = p[key].toString().toLowerCase();
+      let brandFiltering = filters[key].toString().toLowerCase();
+      isValid = isValid && brandSearching.includes(brandFiltering);
+    }
+    return isValid;
+  });
+  res.send(searched_brand);
   // console.log(searched_product);
 })
 

@@ -10,7 +10,8 @@
     "categoryID": "4",
     "categoryName": "Garden",
     "tag": "Decor",
-    "tagID": "5"
+    "tagID": "5",
+    "brandID": "6"
   },
   {
     "id": "2",
@@ -21,7 +22,8 @@
     "categoryID": "7",
     "categoryName": "Home Decor",
     "tag": "Decor",
-    "tagID": "5"
+    "tagID": "5",
+    "brandID": "1"
   },
   {
     "id": "3",
@@ -35,7 +37,8 @@
     "categoryID": "6",
     "categoryName": "Furniture",
     "tag": "Interior",
-    "tagID": "2"
+    "tagID": "2",
+    "brandID": "5"
   },
   {
     "id": "4",
@@ -49,7 +52,8 @@
     "categoryID": "7",
     "categoryName": "Home Decor",
     "tag": "Interior",
-    "tagID": "2"
+    "tagID": "2",
+    "brandID": "4"
   },
   {
     "id": "5",
@@ -62,7 +66,8 @@
     "categoryID": "6",
     "categoryName": "Furniture",
     "tag": "Dining",
-    "tagID": "3"
+    "tagID": "3",
+    "brandID": "5"
   },
   {
     "id": "6",
@@ -74,7 +79,8 @@
     "categoryID": "4",
     "categoryName": "Garden",
     "tag": "Trendy",
-    "tagID": "4"
+    "tagID": "4",
+    "brandID": "6"
   },
   {
     "id": "7",
@@ -85,7 +91,8 @@
     "categoryID": "2",
     "categoryName": "Living Room",
     "tag": "Dining",
-    "tagID": "3"
+    "tagID": "3",
+    "brandID": "5"
   },
   {
     "id": "8",
@@ -96,7 +103,8 @@
     "categoryID": "1",
     "categoryName": "Bed Room",
     "tag": "Trendy",
-    "tagID": "4"
+    "tagID": "4",
+    "brandID": "2"
   },
   {
     "id": "9",
@@ -109,7 +117,8 @@
     "categoryID": "5",
     "categoryName": "Wall Paintings",
     "tag": "Architecture",
-    "tagID": "1"
+    "tagID": "1",
+    "brandID": "3"
   },
   {
     "id": "10",
@@ -122,7 +131,8 @@
     "categoryID": "6",
     "categoryName": "Furniture",
     "tag": "Interior",
-    "tagID": "2"
+    "tagID": "2",
+    "brandID": "3"
   },
   {
     "id": "11",
@@ -135,7 +145,8 @@
     "categoryID": "3",
     "categoryName": "Dining Room",
     "tag": "Decor",
-    "tagID": "5"
+    "tagID": "5",
+    "brandID": "3"
   },
   {
     "id": "12",
@@ -148,6 +159,7 @@
     "categoryID": "4",
     "categoryName": "Garden",
     "tag": "Lawn",
-    "tagID": "6"
+    "tagID": "6",
+    "brandID": "3"
   }
 ]
