@@ -11,7 +11,8 @@
     "categoryName": "Garden",
     "tag": "Decor",
     "tagID": "5",
-    "brandID": "6"
+    "brandID": "6",
+    "brand": "FLOOM"
   },
   {
     "id": "2",
@@ -23,7 +24,8 @@
     "categoryName": "Home Decor",
     "tag": "Decor",
     "tagID": "5",
-    "brandID": "1"
+    "brandID": "1",
+    "brand": "PHILIPS"
   },
   {
     "id": "3",
@@ -38,7 +40,8 @@
     "categoryName": "Furniture",
     "tag": "Interior",
     "tagID": "2",
-    "brandID": "5"
+    "brandID": "5",
+    "brand": "PARTEX"
   },
   {
     "id": "4",
@@ -53,7 +56,8 @@
     "categoryName": "Home Decor",
     "tag": "Interior",
     "tagID": "2",
-    "brandID": "4"
+    "brandID": "4",
+    "brand": "BASEUS"
   },
   {
     "id": "5",
@@ -67,7 +71,8 @@
     "categoryName": "Furniture",
     "tag": "Dining",
     "tagID": "3",
-    "brandID": "5"
+    "brandID": "5",
+    "brand": "PARTEX"
   },
   {
     "id": "6",
@@ -80,7 +85,8 @@
     "categoryName": "Garden",
     "tag": "Trendy",
     "tagID": "4",
-    "brandID": "6"
+    "brandID": "6",
+    "brand": "FLOOM"
   },
   {
     "id": "7",
@@ -92,7 +98,8 @@
     "categoryName": "Living Room",
     "tag": "Dining",
     "tagID": "3",
-    "brandID": "5"
+    "brandID": "5",
+    "brand": "PARTEX"
   },
   {
     "id": "8",
@@ -104,7 +111,8 @@
     "categoryName": "Bed Room",
     "tag": "Trendy",
     "tagID": "4",
-    "brandID": "2"
+    "brandID": "2",
+    "brand": "CASIO"
   },
   {
     "id": "9",
@@ -118,7 +126,8 @@
     "categoryName": "Wall Paintings",
     "tag": "Architecture",
     "tagID": "1",
-    "brandID": "3"
+    "brandID": "3",
+    "brand": "RFL"
   },
   {
     "id": "10",
@@ -132,7 +141,8 @@
     "categoryName": "Furniture",
     "tag": "Interior",
     "tagID": "2",
-    "brandID": "3"
+    "brandID": "3",
+    "brand": "RFL"
   },
   {
     "id": "11",
@@ -146,7 +156,8 @@
     "categoryName": "Dining Room",
     "tag": "Decor",
     "tagID": "5",
-    "brandID": "3"
+    "brandID": "3",
+    "brand": "RFL"
   },
   {
     "id": "12",
@@ -160,6 +171,7 @@
     "categoryName": "Garden",
     "tag": "Lawn",
     "tagID": "6",
-    "brandID": "3"
+    "brandID": "3",
+    "brand": "RFL"
   }
 ]

@@ -36,3 +36,11 @@ Search Products by Tag Name: https://mrittik-server.vercel.app/products?[TagName
 
 Example: [https://mrittik-server.vercel.app/products?tag=a](https://mrittik-server.vercel.app/products?tag=a)
 
+<br>
+
+### Get all Products with Brands: https://mrittik-server.vercel.app/brands
+
+Search Products by Tag Name: https://mrittik-server.vercel.app/products?[BrandName]=[SearchItem]
+
+Example: [https://mrittik-server.vercel.app/products?brand=a](https://mrittik-server.vercel.app/products?brand=a)
+
