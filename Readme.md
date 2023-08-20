@@ -10,7 +10,7 @@ It offers a wide range of endpoints for searching, sorting, and filtering produc
 As this is an open-source project, I welcome anyone who wants to contribute to it by adding new features, data sets, bug fixes, or documentation. You can also create issues on the repository if you find any problems or have any suggestions for improvement. This way, we can make this project better and more useful for the community.
 I hope you find this project helpful and interesting. Please feel free to check it out, give it a star, fork it, clone it, or use it in your projects. And don’t forget to share your feedback and experience with me. I would love to hear from you. 
 <br>  
-Kindly, check [CONTRIBUTING.md](https://github.com/hbkabir004/Mrittik-Server/blob/main/CONTRIBUTING.md) to make this api more enriched and functionable.
+Kindly, check [CONTRIBUTING.md](https://github.com/hbkabir004/Mrittik-Server/blob/main/CONTRIBUTING.md) to make this API more enriched and functional.
 
 
 ## Hosted in Vercel -> [Mrittik Server](https://mrittik-server.vercel.app/products)
