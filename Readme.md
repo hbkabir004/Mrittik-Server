@@ -1,4 +1,17 @@
-# Mrittik Server Side Repository
+# Mrittik-Server – an open-source REST API developed with Node.js and Express.js 
+
+
+Mrittik-Server is a REST API that I created using Node.js and Express.js, aimed at helping front-end developers practice building e-commerce projects or need to implement search, sort, and filter functionality without the hassle of dealing with the backend and data.
+<br>
+<br>
+It offers a wide range of endpoints for searching, sorting, and filtering products by different attributes like category, name, price, tag, id, and more. You can utilize this API in any JavaScript framework of your preference to develop exceptional e-commerce projects or other projects that require searching, sorting, and filtering features.
+<br>
+<br>
+As this is an open-source project, I welcome anyone who wants to contribute to it by adding new features, data sets, bug fixes, or documentation. You can also create issues on the repository if you find any problems or have any suggestions for improvement. This way, we can make this project better and more useful for the community.
+I hope you find this project helpful and interesting. Please feel free to check it out, give it a star, fork it, clone it, or use it in your projects. And don’t forget to share your feedback and experience with me. I would love to hear from you. 
+<br>  
+Kindly, check [CONTRIBUTING.md](https://github.com/hbkabir004/Mrittik-Server/blob/main/CONTRIBUTING.md) to make this api more enriched and functionable.
+
 
 ## Hosted in Vercel -> [Mrittik Server](http://localhost:5000/)
 
