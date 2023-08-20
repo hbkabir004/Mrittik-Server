@@ -13,7 +13,7 @@ I hope you find this project helpful and interesting. Please feel free to check 
 Kindly, check [CONTRIBUTING.md](https://github.com/hbkabir004/Mrittik-Server/blob/main/CONTRIBUTING.md) to make this api more enriched and functionable.
 
 
-## Hosted in Vercel -> [Mrittik Server](http://localhost:5000/)
+## Hosted in Vercel -> [Mrittik Server](mrittik-server.vercel.app/products)
 
 ## Live Links
 
