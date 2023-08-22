@@ -155,7 +155,7 @@ app.get('/products/tag/:id', (req, res) => {
 
 })
 
-//   Search Product by category
+//  Sort Products in ascending order
 app.get('/products/category/:id/aes', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
@@ -174,7 +174,7 @@ app.get('/products/category/:id/aes', (req, res) => {
 
 })
 
-//   Search Product by category
+//   Sort Products in descending order
 app.get('/products/category/:id/des', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
