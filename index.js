@@ -9,7 +9,7 @@ const tags = require('./data/tag.json');
 const brands = require('./data/brand.json');
 
 
-// Sorting ascending and descending function
+// import function for Sorting ascending and descending order through price
 const sorting_asc_des = require('./commonFunctions/sorting_asc_des')
 
 // Global Middleware
@@ -84,14 +84,14 @@ app.get('/brands', (req, res) => {
 
 // Sorting Price Low to High
 app.get('/products/aes', (req, res) => {
-  // sending path and product to sorting_asc_des function for sorting
-  const asc_products = sorting_asc_des(req.path, products)
+  // Call the function and sending path and product to sorting_asc_des function for sorting
+  const asc_products = sorting_asc_des(req.path, products) //call and pass arguments to sorting_asc_des
   res.send(asc_products);
 })
 
 // Sorting Price High to Low 
 app.get('/products/des', (req, res) => {
-  const des_products = sorting_asc_des(req.path, products)
+  const des_products = sorting_asc_des(req.path, products) //call and pass arguments to sorting_asc_des
   res.send(des_products);
 })
 
@@ -146,8 +146,7 @@ app.get('/products/category/:id/aes', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
 
-
-  const asc_category = sorting_asc_des(req.path, category_product)
+  const asc_category = sorting_asc_des(req.path, category_product) //call and pass arguments to sorting_asc_des
   res.send(asc_category);
 
 })
@@ -157,7 +156,7 @@ app.get('/products/category/:id/des', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
 
-  const des_category = sorting_asc_des(req.path, category_product)
+  const des_category = sorting_asc_des(req.path, category_product) //call and pass arguments to sorting_asc_des
   res.send(des_category);
 
 })
