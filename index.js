@@ -66,7 +66,6 @@ app.get('/tags', (req, res) => {
     return isValid;
   });
   res.send(searched_tag);
-  // console.log(searched_product);
 })
 
 // Search Product By Brands 
@@ -100,7 +99,7 @@ app.get('/products/des', (req, res) => {
 })
 
 
-//   Search Category by ID
+// Search Category by ID
 app.get('/category/:id', (req, res) => {
   const id = req.params.id;
   const selected_category = category.find(c => c.id == id);
@@ -159,7 +158,7 @@ app.get('/products/category/:id/aes', (req, res) => {
 
 })
 
-//   Sorting category Products in descending order
+//  Sorting category Products in descending order
 app.get('/products/category/:id/des', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
