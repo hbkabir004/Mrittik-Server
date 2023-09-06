@@ -10,7 +10,11 @@ const brands = require('./data/brand.json');
 const aesProducts = require('./data/products.json');
 const desProducts = require('./data/products.json');
 
+// compare function
+const compare = require('./commonFunctions/compare')
+
 app.use(cors())
+
 
 app.get('/', (req, res) => {
   res.send('Server is running')
@@ -82,29 +86,13 @@ app.get('/brands', (req, res) => {
 })
 
 // Low to High
-app.get('/products/aes', (req, res) => {
-  function compare(a, b) {
-    const aesPriceA = parseInt(a.price);
-    const aesPriceB = parseInt(b.price);
-    return aesPriceA - aesPriceB;
-  }
-
-  const aes_products = aesProducts.sort(compare);
-  res.send(aes_products);
-  // console.log(aes_products);
+app.get('/products/aes',compare, (req, res) => {
+  res.send(req.data);
 })
 
 // High to Low 
-app.get('/products/des', (req, res) => {
-  function compare(a, b) {
-    const desPriceA = parseInt(a.price);
-    const desPriceB = parseInt(b.price);
-    return desPriceB - desPriceA;
-  }
-
-  const des_products = desProducts.sort(compare);
-  res.send(des_products);
-  // console.log(des_products);
+app.get('/products/des', compare, (req, res) => {
+  res.send(req.data);
 })
 
 
