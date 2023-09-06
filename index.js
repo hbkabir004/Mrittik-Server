@@ -10,10 +10,10 @@ const brands = require('./data/brand.json');
 // const aesProducts = require('./data/products.json');
 // const desProducts = require('./data/products.json');
 
-// compare function
-const {compare} = require('./commonFunctions/compare')
-// const b = require('./commonFunctions/compare')
+// Sorting ascending and descending function
+const sorting_asc_des = require('./commonFunctions/sorting_asc_des')
 
+// Global Middleware
 app.use(cors())
 
 
@@ -89,14 +89,14 @@ app.get('/brands', (req, res) => {
 // Sorting Price Low to High
 app.get('/products/aes', (req, res) => {
   // sending path and product to compare function for sorting
-  const data = compare(req.path, products)
-  res.send(data);
+  const asc_products = sorting_asc_des(req.path, products)
+  res.send(asc_products);
 })
 
 // Sorting Price High to Low 
 app.get('/products/des', (req, res) => {
-  const data = compare(req.path, products)
-  res.send(data);
+  const des_products = sorting_asc_des(req.path, products)
+  res.send(des_products);
 })
 
 
@@ -154,8 +154,8 @@ app.get('/products/category/:id/aes', (req, res) => {
   // const category_product = products.filter(product => console.log(product.categoryID));
   // console.log(id);
 
-  const data = compare(req.path, category_product)
-  res.send(data);
+  const asc_category = sorting_asc_des(req.path, category_product)
+  res.send(asc_category);
 
 })
 
@@ -166,8 +166,8 @@ app.get('/products/category/:id/des', (req, res) => {
   // const category_product = products.filter(product => console.log(product.categoryID));
   // console.log(id);
 
-  const data = compare(req.path, category_product)
-  res.send(data);
+  const des_category = sorting_asc_des(req.path, category_product)
+  res.send(des_category);
 
 })
 
