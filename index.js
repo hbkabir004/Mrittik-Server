@@ -84,7 +84,7 @@ app.get('/brands', (req, res) => {
 
 // Sorting Price Low to High
 app.get('/products/aes', (req, res) => {
-  // sending path and product to compare function for sorting
+  // sending path and product to sorting_asc_des function for sorting
   const asc_products = sorting_asc_des(req.path, products)
   res.send(asc_products);
 })
@@ -145,7 +145,6 @@ app.get('/products/tag/:id', (req, res) => {
 app.get('/products/category/:id/aes', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
-  // const category_product = products.filter(product => console.log(product.categoryID));
 
 
   const asc_category = sorting_asc_des(req.path, category_product)
@@ -157,7 +156,6 @@ app.get('/products/category/:id/aes', (req, res) => {
 app.get('/products/category/:id/des', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
-  // const category_product = products.filter(product => console.log(product.categoryID));
 
   const des_category = sorting_asc_des(req.path, category_product)
   res.send(des_category);
