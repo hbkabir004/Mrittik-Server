@@ -7,8 +7,7 @@ const category = require('./data/category.json');
 const products = require('./data/products.json');
 const tags = require('./data/tag.json');
 const brands = require('./data/brand.json');
-// const aesProducts = require('./data/products.json');
-// const desProducts = require('./data/products.json');
+
 
 // Sorting ascending and descending function
 const sorting_asc_des = require('./commonFunctions/sorting_asc_des')
@@ -49,7 +48,6 @@ app.get('/products', (req, res) => {
     return isValid;
   });
   res.send(searched_product);
-  // console.log(searched_product);
 })
 
 // Search Product By Tags 
@@ -82,7 +80,6 @@ app.get('/brands', (req, res) => {
     return isValid;
   });
   res.send(searched_brand);
-  // console.log(searched_product);
 })
 
 // Sorting Price Low to High
@@ -112,7 +109,6 @@ app.get('/products/:id', (req, res) => {
   const id = req.params.id;
   const selected_product = products.find(p => p.id == id);
   res.send(selected_product);
-  // console.log(selected_product);
 });
 
 //   Search Product by CategoryID
@@ -120,13 +116,12 @@ app.get('/products/category/:id', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
   // const category_product = products.filter(product => console.log(product.categoryID));
-  // console.log(id);
+
 
   const filters = req.query;
   const category_searched_product = category_product.filter(p => {
     let isValid = true;
     for (key in filters) {
-      // console.log(key, filters);
       let productSearching = p[key].toString().toLowerCase();
       let productFiltering = filters[key].toString().toLowerCase();
       isValid = isValid && productSearching.includes(productFiltering);
@@ -151,7 +146,7 @@ app.get('/products/category/:id/aes', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
   // const category_product = products.filter(product => console.log(product.categoryID));
-  // console.log(id);
+
 
   const asc_category = sorting_asc_des(req.path, category_product)
   res.send(asc_category);
@@ -163,7 +158,6 @@ app.get('/products/category/:id/des', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
   // const category_product = products.filter(product => console.log(product.categoryID));
-  // console.log(id);
 
   const des_category = sorting_asc_des(req.path, category_product)
   res.send(des_category);
