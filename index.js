@@ -7,11 +7,12 @@ const category = require('./data/category.json');
 const products = require('./data/products.json');
 const tags = require('./data/tag.json');
 const brands = require('./data/brand.json');
-const aesProducts = require('./data/products.json');
-const desProducts = require('./data/products.json');
+// const aesProducts = require('./data/products.json');
+// const desProducts = require('./data/products.json');
 
 // compare function
-const compare = require('./commonFunctions/compare')
+const {compare} = require('./commonFunctions/compare')
+// const b = require('./commonFunctions/compare')
 
 app.use(cors())
 
@@ -85,14 +86,17 @@ app.get('/brands', (req, res) => {
   // console.log(searched_product);
 })
 
-// Low to High
-app.get('/products/aes',compare, (req, res) => {
-  res.send(req.data);
+// Sorting Price Low to High
+app.get('/products/aes', (req, res) => {
+  // sending path and product to compare function for sorting
+  const data = compare(req.path, products)
+  res.send(data);
 })
 
-// High to Low 
-app.get('/products/des', compare, (req, res) => {
-  res.send(req.data);
+// Sorting Price High to Low 
+app.get('/products/des', (req, res) => {
+  const data = compare(req.path, products)
+  res.send(data);
 })
 
 
@@ -143,40 +147,27 @@ app.get('/products/tag/:id', (req, res) => {
 
 })
 
-//  Sort Products in ascending order
+//  Sorting category Products in ascending order
 app.get('/products/category/:id/aes', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
   // const category_product = products.filter(product => console.log(product.categoryID));
   // console.log(id);
 
-  function compare(a, b) {
-    const aesCatPriceA = parseInt(a.price);
-    const aesCatPriceB = parseInt(b.price);
-    return aesCatPriceA - aesCatPriceB;
-  }
-
-  const aes_cat_products = category_product.sort(compare);
-  // res.send(aes_products);
-  res.send(aes_cat_products);
+  const data = compare(req.path, category_product)
+  res.send(data);
 
 })
 
-//   Sort Products in descending order
+//   Sorting category Products in descending order
 app.get('/products/category/:id/des', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
   // const category_product = products.filter(product => console.log(product.categoryID));
   // console.log(id);
 
-  function compare(a, b) {
-    const desCatPriceA = parseInt(a.price);
-    const desCatPriceB = parseInt(b.price);
-    return desCatPriceB - desCatPriceA;
-  }
-
-  const des_cat_products = category_product.sort(compare);
-  res.send(des_cat_products);
+  const data = compare(req.path, category_product)
+  res.send(data);
 
 })
 

@@ -1,19 +1,35 @@
-const products = require('../data/products.json')
+// const compare =(productsToSort)=> {
+    // return (req, res, next) => {
+    //     const path = req.path.split("/")
+    //     console.log(path.length - 1)
+    // let sorted_products = []
+    // if(path[path.length - 1] == 'aes'){
+    //     sorted_products = productsToSort.sort((a,b)=> {
+    //         return parseInt(a.price) - parseInt(b.price);
+    //       });
+    // } else if (path[path.length - 1] == 'des'){
+    //     sorted_products = productsToSort.sort((a,b)=> {
+    //         return parseInt(b.price) - parseInt(a.price);
+    //      });
+    // }
+    // req.data = sorted_products
+    // next()
+    // }
+// }
 
-function compareFunc(req, res, next) {
-    const path = req.path.split("/")
+const compare =(order, productsToSort)=> {
     let sorted_products = []
-    if(path[2] === 'aes'){
-        sorted_products = products.sort((a,b)=> {
+    if(order.includes('aes')){
+        sorted_products = productsToSort.sort((a,b)=> {
             return parseInt(a.price) - parseInt(b.price);
           });
-    } else if (path[2] === 'des'){
-        sorted_products = products.sort((a,b)=> {
+    } else if (order.includes('des')){
+        sorted_products = productsToSort.sort((a,b)=> {
             return parseInt(b.price) - parseInt(a.price);
          });
     }
-    req.data = sorted_products
-    next()
+
+    return sorted_products
 }
 
-module.exports = compareFunc
+module.exports = {compare}
