@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 4000
 const cors = require('cors')
 
 const category = require('./data/category.json');
@@ -39,8 +39,7 @@ app.get('/products', (req, res) => {
   const filters = req.query;
   const searched_product = products.filter(p => {
     let isValid = true;
-    for (key in filters) {
-      // console.log(key, filters);
+    for (let key in filters) {
       let productSearching = p[key].toString().toLowerCase();
       let productFiltering = filters[key].toString().toLowerCase();
       isValid = isValid && productSearching.includes(productFiltering);
@@ -55,8 +54,7 @@ app.get('/tags', (req, res) => {
   const filters = req.query;
   const searched_tag = tags.filter(p => {
     let isValid = true;
-    for (key in filters) {
-      // console.log(key, filters);
+    for (let key in filters) {
       let tagSearching = p[key].toString().toLowerCase();
       let tagFiltering = filters[key].toString().toLowerCase();
       isValid = isValid && tagSearching.includes(tagFiltering);
@@ -71,8 +69,7 @@ app.get('/brands', (req, res) => {
   const filters = req.query;
   const searched_brand = brands.filter(p => {
     let isValid = true;
-    for (key in filters) {
-      // console.log(key, filters);
+    for (let key in filters) {
       let brandSearching = p[key].toString().toLowerCase();
       let brandFiltering = filters[key].toString().toLowerCase();
       isValid = isValid && brandSearching.includes(brandFiltering);
@@ -101,7 +98,6 @@ app.get('/category/:id', (req, res) => {
   const id = req.params.id;
   const selected_category = category.find(c => c.id == id);
   res.send(selected_category);
-  // console.log(selected_category);
 });
 
 //   Search Product by ProductID
@@ -115,13 +111,12 @@ app.get('/products/:id', (req, res) => {
 app.get('/products/category/:id', (req, res) => {
   const id = req.params.id;
   const category_product = products.filter(product => product.categoryID === id);
-  // const category_product = products.filter(product => console.log(product.categoryID));
 
 
   const filters = req.query;
   const category_searched_product = category_product.filter(p => {
     let isValid = true;
-    for (key in filters) {
+    for (let key in filters) {
       let productSearching = p[key].toString().toLowerCase();
       let productFiltering = filters[key].toString().toLowerCase();
       isValid = isValid && productSearching.includes(productFiltering);
@@ -162,5 +157,16 @@ app.get('/products/category/:id/des', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Server running on http://localhost:${port}`);
+}).on('error', (err) => {
+  if (err.code === 'EACCES') {
+    console.error(`Port ${port} requires elevated privileges`);
+    process.exit(1);
+  } else if (err.code === 'EADDRINUSE') {
+    console.error(`Port ${port} is already in use`);
+    process.exit(1);
+  } else {
+    console.error(`Error: ${err}`);
+    process.exit(1);
+  }
+});
