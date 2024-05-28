@@ -25,7 +25,7 @@ app.get('/category', (req, res) => {
   const filters = req.query;
   const searched_category = category.filter(c => {
     let isValid = true;
-    for (key in filters) {
+    for (let key in filters) {
       isValid = isValid && c[key] == filters[key];
     }
     return isValid;
