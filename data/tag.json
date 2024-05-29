@@ -22,5 +22,9 @@
   {
     "tagID": "6",
     "tag": "Lawn"
+  },
+  {
+    "tagID": "7",
+    "tag": "Testing Tag"
   }
 ]

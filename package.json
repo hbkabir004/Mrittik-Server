@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start-dev": "nodemon index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +14,10 @@
   "dependencies": {
     "cors": "latest",
     "express": "latest",
-    "nodemon": "latest"
+    "nodemon": "latest",
+    "vercel": "^34.2.3"
+  },
+  "resolutions": {
+    "inflight": "1.0.6"
   }
 }
