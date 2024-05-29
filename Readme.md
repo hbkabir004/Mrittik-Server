@@ -85,48 +85,48 @@ Now, open the <b>Mrittik-Server</b> folder in your <b>IDE (VS Code recommended)<
   nodemon index
 ```
 
-You can run the local server on port [5000](http://localhost:5000/). Now, you should have accessed the following URLs on your local server.
+You can run the local server on port [4000](http://localhost:4000/). Now, you should have accessed the following URLs on your local server.
 <br>
 
-### Get all Product Categories: http://localhost:5000/category
+### Get all Product Categories: http://localhost:4000/category
 
-Get Product details by category id: http://localhost:5000/products/category/${id}
+Get Product details by category id: http://localhost:4000/products/category/${id}
 
-Example: http://localhost:5000/products/category/1
+Example: http://localhost:4000/products/category/1
 
-#### Get Category by search: http://localhost:5000/category?[dataProperty]=[dataValue]
+#### Get Category by search: http://localhost:4000/category?[dataProperty]=[dataValue]
 
-#### Example (With Name): http://localhost:5000/category?name=Furniture
+#### Example (With Name): http://localhost:4000/category?name=Furniture
 
-#### Example (With ID): http://localhost:5000/category?categoryID=3
-
-<br>
-
-### Get all Products: http://localhost:5000/products
-
-Get Product details by Product id: http://localhost:5000/products/${id}
-
-Example: http://localhost:5000/products/1
-
-#### Get Product by Search: http://localhost:5000/products?[dataProperty]=[dataValue]
-
-#### Example (With Name): http://localhost:5000/products?name=Decor+Plant
-
-#### Example (With ID): http://localhost:5000/products?id=7
+#### Example (With ID): http://localhost:4000/category?categoryID=3
 
 <br>
 
-### Get all Products with Tags: http://localhost:5000/tags
+### Get all Products: http://localhost:4000/products
 
-Search Products by Tag Name: http://localhost:5000/products?[TagName]=[SearchItem]
+Get Product details by Product id: http://localhost:4000/products/${id}
 
-Example: [http://localhost:5000/products?tag=a](http://localhost:5000/products?tag=a)
+Example: http://localhost:4000/products/1
+
+#### Get Product by Search: http://localhost:4000/products?[dataProperty]=[dataValue]
+
+#### Example (With Name): http://localhost:4000/products?name=Decor+Plant
+
+#### Example (With ID): http://localhost:4000/products?id=7
 
 <br>
 
-### Get all Products with Brands: http://localhost:5000/brands
+### Get all Products with Tags: http://localhost:4000/tags
 
-Search Products by Tag Name: http://localhost:5000/products?[BrandName]=[SearchItem]
+Search Products by Tag Name: http://localhost:4000/products?[TagName]=[SearchItem]
 
-Example: [http://localhost:5000/products?brand=a](http://localhost:5000/products?brand=a)
+Example: [http://localhost:4000/products?tag=a](http://localhost:4000/products?tag=a)
+
+<br>
+
+### Get all Products with Brands: http://localhost:4000/brands
+
+Search Products by Tag Name: http://localhost:4000/products?[BrandName]=[SearchItem]
+
+Example: [http://localhost:4000/products?brand=a](http://localhost:4000/products?brand=a)
 <br>
