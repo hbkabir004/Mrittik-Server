@@ -75,7 +75,7 @@ Run the following command to start the development server:
 
 
 ```bash
-nodemon index
+node index
 ```
 
 
