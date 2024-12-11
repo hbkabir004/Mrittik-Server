@@ -1,132 +1,96 @@
-# Mrittik-Server – an open-source REST API developed with Node.js and Express.js
 
-Mrittik-Server is a REST API that I created using Node.js and Express.js, aimed at helping front-end developers practice building e-commerce projects or need to implement search, sort, and filter functionality without the hassle of dealing with the backend and data.
-<br>
-<br>
-It offers a wide range of endpoints for searching, sorting, and filtering products by different attributes like category, name, price, tag, id, and more. You can utilize this API in any JavaScript framework of your preference to develop exceptional e-commerce projects or other projects that require searching, sorting, and filtering features.
-<br>
-<br>
-As this is an open-source project, I welcome anyone who wants to contribute to it by adding new features, data sets, bug fixes, or documentation. You can also create issues on the repository if you find any problems or have any suggestions for improvement. This way, we can make this project better and more useful for the community.
-I hope you find this project helpful and interesting. Please feel free to check it out, give it a star, fork it, clone it, or use it in your projects. And don’t forget to share your feedback and experience with me. I would love to hear from you.
-<br>
-<br>
-Kindly, check [CONTRIBUTING.md](https://github.com/hbkabir004/Mrittik-Server/blob/main/CONTRIBUTING.md) to make this API more enriched and functional.
+# 🚀 Mrittik-Server API Documentation
 
-## Hosted in Vercel -> [Mrittik Server](https://mrittik-server.vercel.app/products)
-This project utilizes the **Vercel CLI** for automatically deploying every ``git push`` to the ``main`` branch.
+Welcome to **Mrittik-Server** – an open-source REST API developed with **Node.js** and **Express.js**!
+This project is designed to help developers easily integrate **searching**, **sorting**, and **filtering** functionality into their applications.
 
-## Live Links
+Use these APIs for building e-commerce or any project that requires advanced query capabilities.
 
-### Get all Product Categories: https://mrittik-server.vercel.app/category
+---
 
-Get Product details by category id: https://mrittik-server.vercel.app/products/category/${id}
+## 🌐 Live API Endpoints
 
-Example: https://mrittik-server.vercel.app/products/category/1
+| 🛠**Feature**                | 🔗**Endpoint**                     | 📌**Example**                                                                                                                    |
+| ---------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Get Categories**           | `/category`                            | [View Categories](https://mrittik-server.vercel.app/category)                                                                             |
+| **Get Products by Category** | `/products/category/${id}`             | [Example](https://mrittik-server.vercel.app/products/category/1)                                                                          |
+| **Search Categories**        | `/category?[dataProperty]=[dataValue]` | [By Name](https://mrittik-server.vercel.app/category?name=Furniture)`<br>`[By ID](https://mrittik-server.vercel.app/category?categoryID=3) |
+| **Get All Products**         | `/products`                            | [View All Products](https://mrittik-server.vercel.app/products)                                                                           |
+| **Get Product by ID**        | `/products/${id}`                      | [Example](https://mrittik-server.vercel.app/products/1)                                                                                   |
+| **Search Products**          | `/products?[dataProperty]=[dataValue]` | [By Name](https://mrittik-server.vercel.app/products?name=Decor+Plant)`<br>`[By ID](https://mrittik-server.vercel.app/products?id=7)       |
+| **Get All Tags**             | `/tags`                                | [View Tags](https://mrittik-server.vercel.app/tags)                                                                                       |
+| **Search by Tag**            | `/products?[TagName]=[SearchItem]`     | [Example](https://mrittik-server.vercel.app/products?tag=a)                                                                               |
+| **Get All Brands**           | `/brands`                              | [View Brands](https://mrittik-server.vercel.app/brands)                                                                                   |
+| **Search by Brand**          | `/products?[BrandName]=[SearchItem]`   | [Example](https://mrittik-server.vercel.app/products?brand=a)                                                                             |
 
-#### Get Category by search: https://mrittik-server.vercel.app/category?[dataProperty]=[dataValue]
+---
 
-#### Example (With Name): https://mrittik-server.vercel.app/category?name=Furniture
+## 🛠 Local Development Endpoints
 
-#### Example (With ID): https://mrittik-server.vercel.app/category?categoryID=3
+| 💻**Feature**                | 🏠**Endpoint**                     | 📌**Example**                                                                                            |
+| ---------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Get Categories**           | `/category`                            | [Local Categories](http://localhost:4000/category)                                                                |
+| **Get Products by Category** | `/products/category/${id}`             | [Example](http://localhost:4000/products/category/1)                                                              |
+| **Search Categories**        | `/category?[dataProperty]=[dataValue]` | [By Name](http://localhost:4000/category?name=Furniture)`<br>`[By ID](http://localhost:4000/category?categoryID=3) |
+| **Get All Products**         | `/products`                            | [Local Products](http://localhost:4000/products)                                                                  |
+| **Get Product by ID**        | `/products/${id}`                      | [Example](http://localhost:4000/products/1)                                                                       |
+| **Search Products**          | `/products?[dataProperty]=[dataValue]` | [By Name](http://localhost:4000/products?name=Decor+Plant)`<br>`[By ID](http://localhost:4000/products?id=7)       |
+| **Get All Tags**             | `/tags`                                | [Local Tags](http://localhost:4000/tags)                                                                          |
+| **Search by Tag**            | `/products?[TagName]=[SearchItem]`     | [Example](http://localhost:4000/products?tag=a)                                                                   |
+| **Get All Brands**           | `/brands`                              | [Local Brands](http://localhost:4000/brands)                                                                      |
+| **Search by Brand**          | `/products?[BrandName]=[SearchItem]`   | [Example](http://localhost:4000/products?brand=a)                                                                 |
 
-<br>
+---
 
-### Get all Products: https://mrittik-server.vercel.app/products
+## 🔧 Development Setup
 
-Get Product details by Product id: https://mrittik-server.vercel.app/products/${id}
+To start working with **Mrittik-Server**, follow these steps:
 
-Example: https://mrittik-server.vercel.app/products/1
+### 📥 Prerequisites
 
-#### Get Product by Search: https://mrittik-server.vercel.app/products?[dataProperty]=[dataValue]
+1. Install [Node.js](https://nodejs.org/en).
+2. Install Yarn globally:
+   ```bash
+   npm install --global yarn
+   ```
 
-#### Example (With Name): https://mrittik-server.vercel.app/products?name=Decor+Plant
+### 🛠 Clone the Repository
 
-#### Example (With ID): https://mrittik-server.vercel.app/products?id=7
-
-<br>
-
-### Get all Products with Tags: https://mrittik-server.vercel.app/tags
-
-Search Products by Tag Name: https://mrittik-server.vercel.app/products?[TagName]=[SearchItem]
-
-Example: [https://mrittik-server.vercel.app/products?tag=a](https://mrittik-server.vercel.app/products?tag=a)
-
-<br>
-
-### Get all Products with Brands: https://mrittik-server.vercel.app/brands
-
-Search Products by Tag Name: https://mrittik-server.vercel.app/products?[BrandName]=[SearchItem]
-
-Example: [https://mrittik-server.vercel.app/products?brand=a](https://mrittik-server.vercel.app/products?brand=a)
-
-## Setting up the development environment
-
-Download the [NodeJS](https://nodejs.org/en) and install it.
-
-# How to run code
-
-## Clone the repository
-
-```sh
+```bash
 git clone https://github.com/hbkabir004/Mrittik-Server.git
 ```
 
-Now, open the <b>Mrittik-Server</b> folder in your <b>IDE (VS Code recommended)</b> and run the following commands on <b>terminal (Git Bash)</b>
+### ⚙️ Install Dependencies
+
+Navigate to the project folder in your terminal and run:
+
 
 ```bash
-  npm install --global yarn
+yarn install
 ```
+
+### 🚀 Start the Server
+
+Run the following command to start the development server:
+
 
 ```bash
-  yarn install
+nodemon index
 ```
 
-```bash
-  nodemon index
-```
 
-You can run the local server on port [4000](http://localhost:4000/). Now, you should have accessed the following URLs on your local server.
-<br>
+### 🌟 Your local server is live at: [http://localhost:4000](http://localhost:4000)
 
-### Get all Product Categories: http://localhost:4000/category
+---
 
-Get Product details by category id: http://localhost:4000/products/category/${id}
+## 🤝 Contributing
 
-Example: http://localhost:4000/products/category/1
+We ❤️ contributions!
+Check out [CONTRIBUTING.md](https://github.com/hbkabir004/Mrittik-Server/blob/main/CONTRIBUTING.md) for details on how you can improve this project.
 
-#### Get Category by search: http://localhost:4000/category?[dataProperty]=[dataValue]
+---
 
-#### Example (With Name): http://localhost:4000/category?name=Furniture
+## 📢 Feedback
 
-#### Example (With ID): http://localhost:4000/category?categoryID=3
-
-<br>
-
-### Get all Products: http://localhost:4000/products
-
-Get Product details by Product id: http://localhost:4000/products/${id}
-
-Example: http://localhost:4000/products/1
-
-#### Get Product by Search: http://localhost:4000/products?[dataProperty]=[dataValue]
-
-#### Example (With Name): http://localhost:4000/products?name=Decor+Plant
-
-#### Example (With ID): http://localhost:4000/products?id=7
-
-<br>
-
-### Get all Products with Tags: http://localhost:4000/tags
-
-Search Products by Tag Name: http://localhost:4000/products?[TagName]=[SearchItem]
-
-Example: [http://localhost:4000/products?tag=a](http://localhost:4000/products?tag=a)
-
-<br>
-
-### Get all Products with Brands: http://localhost:4000/brands
-
-Search Products by Tag Name: http://localhost:4000/products?[BrandName]=[SearchItem]
-
-Example: [http://localhost:4000/products?brand=a](http://localhost:4000/products?brand=a)
-<br>
+Have questions or suggestions?
+Feel free to [open an issue](https://github.com/hbkabir004/Mrittik-Server/issues) or reach out with your feedback. Let's build something awesome together! 🌟

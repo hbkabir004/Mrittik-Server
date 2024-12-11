@@ -1,0 +1,53 @@
+[
+  {
+    "image":
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/2701dd50cb3d0fc0d1c60287a0e4fe1ddc4118358f34d897fbe393e4d2033b6a?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "discount": "45%",
+    "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/5b28932ea12c802c58b84c8d7a63e96c47348d34871636b6ff2c5bdf510f8b8e?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "name": "Thomas' Everything Bagels – 20oz_6ct",
+    "rating": 3,
+    "originalPrice": 4.50,
+    "discountedPrice": 2.50
+  },
+  {
+    "image":
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/2701dd50cb3d0fc0d1c60287a0e4fe1ddc4118358f34d897fbe393e4d2033b6a?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "discount": "45%",
+    "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/5b28932ea12c802c58b84c8d7a63e96c47348d34871636b6ff2c5bdf510f8b8e?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "name": "Thomas' Everything Bagels – 20oz_6ct",
+    "rating": 3,
+    "originalPrice": 4.50,
+    "discountedPrice": 2.50
+  },
+  {
+    "image":
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/2701dd50cb3d0fc0d1c60287a0e4fe1ddc4118358f34d897fbe393e4d2033b6a?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "discount": "45%",
+    "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/5b28932ea12c802c58b84c8d7a63e96c47348d34871636b6ff2c5bdf510f8b8e?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "name": "Thomas' Everything Bagels – 20oz_6ct",
+    "rating": 3,
+    "originalPrice": 4.50,
+    "discountedPrice": 2.50
+  },
+  {
+    "image":
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/2701dd50cb3d0fc0d1c60287a0e4fe1ddc4118358f34d897fbe393e4d2033b6a?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "discount": "45%",
+    "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/5b28932ea12c802c58b84c8d7a63e96c47348d34871636b6ff2c5bdf510f8b8e?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "name": "Thomas' Everything Bagels – 20oz_6ct",
+    "rating": 3,
+    "originalPrice": 4.50,
+    "discountedPrice": 2.50
+  },
+  {
+    "image":
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/2701dd50cb3d0fc0d1c60287a0e4fe1ddc4118358f34d897fbe393e4d2033b6a?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "discount": "45%",
+    "icon": "https://cdn.builder.io/api/v1/image/assets/TEMP/5b28932ea12c802c58b84c8d7a63e96c47348d34871636b6ff2c5bdf510f8b8e?placeholderIfAbsent=true&apiKey=8da3fd6b121a4ce09e18e7d9dae826f0",
+    "name": "Thomas' Everything Bagels – 20oz_6ct",
+    "rating": 3,
+    "originalPrice": 4.50,
+    "discountedPrice": 2.50
+  }
+  
+]
